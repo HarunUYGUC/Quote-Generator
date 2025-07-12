@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Pro', serif;
+}
+
+body {
+    background-color: #78B9B5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.quote-app {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.quote-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #254D70;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 2px;
+    background-color: #346562;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+
+#quote {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#quote-text {
+    font-style: italic;
+    margin: 0 5px;
+}
+
+#quote-text.loading {
+    font-style: italic;
+    color: gray;
+}
+
+.fa-minus {
+    padding-top: 3px;;
+}
+
+#author {
+    font-size: 1.2rem;
+    color: #737373;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#author-text {
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #F2F2F2;
+    color: #458783;
+    padding: 13px;
+    margin: 0 2px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border: 2px solid #458783;
+}
+
+.btn:hover {
+    background-color: #bcdcda;
+}
+
+.btn2 {
+    background-color: #458783;
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn2:hover {
+    background-color: #346562;
+}
+
+.fa-rotate-right {
+    padding-right: 7px;
+}
+
+.copy-msg {
+    margin-left: 8px;
+    font-size: 14px;
+    color: green;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    user-select: none; /* Prevent text selection */
+}
+
+.copy-msg.show {
+    opacity: 1;
+}
